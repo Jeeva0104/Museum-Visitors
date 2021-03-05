@@ -1,6 +1,11 @@
 const axios = require("axios");
 const { url } = require("../../config");
-
+/**
+ *
+ * @param {Date} date
+ * @description Makes API call to external Server
+ * @returns Museum visitors in Array of objects
+ */
 const fetchData = async (date) => {
   try {
     var config = {
@@ -17,7 +22,7 @@ const fetchData = async (date) => {
       };
       console.error(errorObject);
     } else {
-      console.error(e.toString());
+      console.error(error.toString());
     }
     return [];
   }

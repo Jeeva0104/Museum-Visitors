@@ -6,7 +6,7 @@ const hostName = config.hostName || "0.0.0.0";
 
 async function main() {
   require("./src/routes/index")(app);
-  console.log(`App listening on port ${hostName}:${port}`);
+  console.log(`App listening on port http://${hostName}:${port}/api`);
 }
 app.listen(port, app.get("host"));
 main().catch((err) => {
