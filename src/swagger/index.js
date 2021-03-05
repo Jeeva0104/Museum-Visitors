@@ -5,9 +5,9 @@ const { museumPath } = require("./paths/museum");
 const swagger = {
   swagger: "2.0",
   info: {
-    description: "Eduzy API Documentation",
+    description: "Museum API Documentation",
     version: "1.0.0",
-    title: "Eduzy",
+    title: "Museum",
     termsOfService: "http://swagger.io/terms/",
     contact: {
       email: "",

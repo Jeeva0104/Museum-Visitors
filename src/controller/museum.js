@@ -9,14 +9,19 @@ const VisitorsCount = async (params) => {
   try {
     const { date = "", museum = "" } = params;
     const formatedDate = converMillisecond(date);
+    if (formatedDate === null) return responseFormatter(null);
     const visitors = await fetchData(formatedDate);
     if (visitors.length <= 0) return responseFormatter(null);
     const visitorsCount = filter(museum, visitors);
     if (visitorsCount === null) return responseFormatter(null);
-    const { result } = responseFormatter(visitorsCount, museum, formatedDate);
-    return { result };
+    const { result, code } = responseFormatter(
+      visitorsCount,
+      museum,
+      formatedDate
+    );
+    return { result, code };
   } catch (e) {
-    return e;
+    throw e;
   }
 };
 

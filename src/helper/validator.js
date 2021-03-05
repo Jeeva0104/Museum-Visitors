@@ -5,6 +5,7 @@ const getErrorMessage = (err = null) => {
     };
   return err;
 };
+
 module.exports = {
   getErrorMessage,
 };
