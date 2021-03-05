@@ -21,3 +21,7 @@ http://0.0.0.0:8000/api/docs
 ### Health Check API
 
 http://0.0.0.0:8000/api/health
+
+### Stable Branch
+
+Branch name:`main`
