@@ -1,6 +1,6 @@
 # Museum-Visitors
 
-# Steps to Run the Project
+## Steps to Run the Project
 
 1.Install `node and nvm` \
 2.Run the command `npm i` \
