@@ -6,7 +6,7 @@ const { url } = require("../../config");
  * @description Makes API call to external Server
  * @returns Museum visitors in Array of objects
  */
-const fetchData = async (date) => {
+const fetchClientData = async (date) => {
   try {
     var config = {
       method: "get",
@@ -29,5 +29,5 @@ const fetchData = async (date) => {
 };
 
 module.exports = {
-  fetchData,
+  fetchClientData,
 };

@@ -1,4 +1,4 @@
-const { fetchData } = require("../helper/server");
+const { fetchClientData } = require("../helper/service");
 const {
   filter,
   convertMillisecond,
@@ -16,7 +16,7 @@ const VisitorsCount = async (params) => {
     const { date = "", museum = "" } = params;
     const formatedDate = convertMillisecond(date);
     if (formatedDate === null) return responseFormatter(null);
-    const visitors = await fetchData(formatedDate);
+    const visitors = await fetchClientData(formatedDate);
     if (visitors.length <= 0) return responseFormatter(null);
     const visitorsCount = filter(museum, visitors);
     if (visitorsCount === null) return responseFormatter(null);

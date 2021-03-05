@@ -7,7 +7,7 @@ const { ERROR_MESSAGE, SUCCESS_STATUS_CODE } = require("./constant");
  * @description converts milliseconds to date
  * @returns {Date} The date in YYYY-MM-DD format
  */
-const convertMillisecond = (milliseconds) => {
+const convertMillisecond = (milliseconds = "") => {
   try {
     const date = new Date(parseInt(milliseconds));
     if (moment(date).isValid()) return moment(date).format("YYYY-MM-DD");
