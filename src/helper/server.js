@@ -2,7 +2,6 @@ const axios = require("axios");
 const { url } = require("../../config");
 
 const fetchData = async (date) => {
-  console.log(date);
   try {
     var config = {
       method: "get",

@@ -19,6 +19,7 @@ const schema = {
     errorMessage: "Please provide proper date",
   },
 };
+
 module.exports = {
   schema,
 };

@@ -1,7 +1,7 @@
 const museumPath = {
   "/visitors": {
     get: {
-      tags: ["institutions"],
+      tags: ["museum"],
       summary: "Returns visitors count",
       description: "Returns a visitors count with museum name and month",
       operationId: "getVisitorsCount",
