@@ -1,5 +1,7 @@
 # Museum-Visitors
 
+Provides the visitors count for a particular month
+
 ### Steps to Run the Project
 
 1.Install `node and nvm` \
