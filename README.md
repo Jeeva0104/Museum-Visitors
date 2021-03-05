@@ -4,11 +4,11 @@ Provides the visitors count for a particular month
 
 ### Steps to Run the Project
 
-1.Install `node and nvm` \
-2.Run the command `npm i` \
-3.Create `.env` file \
-3.Copy the `.env.example` to `.env` \
-4.Run the command `npm start`
+1. Install `node and nvm` \
+2. Run the command `npm i` \
+3. Create `.env` file \
+4. Copy the `.env.example` to `.env` \
+5. Run the command `npm start`
 
 ### Running the Test cases
 
