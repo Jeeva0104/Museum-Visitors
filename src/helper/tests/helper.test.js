@@ -95,7 +95,7 @@ describe("checking responseFormatter", () => {
       result: {
         museum: "avila_adobe",
         visitors: 1234,
-        year: "2014",
+        year: 2014,
         month: "Jul",
       },
       code: 200,

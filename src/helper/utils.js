@@ -52,10 +52,10 @@ const responseFormatter = (visitors = "", museum = "", formatedDate = "") => {
   const monthNum = moment(formatedDate).format("M");
   const month = moment.monthsShort(monthNum - 1);
   const resultObject = {
-    museum,
-    visitors,
-    year,
     month,
+    year: parseInt(year),
+    museum,
+    visitors: parseInt(visitors),
   };
   return { result: resultObject, code: SUCCESS_STATUS_CODE };
 };
