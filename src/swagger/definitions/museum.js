@@ -5,10 +5,10 @@ const museum = {
       type: "string",
     },
     visitors: {
-      type: "string",
+      type: "number",
     },
     year: {
-      type: "string",
+      type: "number",
     },
     month: {
       type: "string",
