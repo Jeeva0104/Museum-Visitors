@@ -12,7 +12,7 @@ const fetchClientData = async (date) => {
       method: "get",
       url: `${url}?month=${date}`,
     };
-    const { data } = await axios(config);
+    const { data = [] } = await axios(config);
     return data;
   } catch (error) {
     if (error.response) {

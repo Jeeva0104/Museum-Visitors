@@ -1,7 +1,6 @@
 const dotenv = require("dotenv");
 
 dotenv.config();
-console.log(process.env.PORT);
 
 const ENV = process.env;
 
